@@ -1,6 +1,7 @@
 plugins {
     id 'java'
 }
+
 group 'guru.qa'
 version '1.0'
 
@@ -11,10 +12,16 @@ repositories {
 dependencies {
     testImplementation (
             'org.junit.jupiter:junit-jupiter:5.8.2',
-            'com.codeborne:selenide:6.4.0'
+            'com.codeborne:selenide:6.4.0',
     )
 }
 
 test {
     useJUnitPlatform()
+}
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
 }
