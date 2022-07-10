@@ -32,8 +32,8 @@ public class MethodSource {
         //Presteps
         Selenide.open(Configuration.baseUrl);
         // Steps
-        $(".Beb").click();
-        $(".ODb").find(String.valueOf(Condition.text(testData))).click();
+        $("a[class=\"Zjb akb\"]").click();
+
 
         // Expected result:
         $$(".akb").find(
